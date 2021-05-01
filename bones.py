@@ -1,7 +1,7 @@
 
 
 
-coord_test = [778520, 9581895, 1195]
+coord_test = [778520, 9581875, 1195]
 
 test_count = 0
 def test(x):
