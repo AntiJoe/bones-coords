@@ -1,12 +1,20 @@
 
 
 
+coord_test = [778520, 9581895, 1195]
 
-
-
+test_count = 0
 def test(x):
-    print(x)
+    global test_count
+    test_count += 1
+    if x[0] == coord_test[0] and x[1] == coord_test[1] and x[2] == coord_test[2]:
+        print(test_count, x)
 
+def test2(x):
+    global test_count
+    test_count += 1
+    if x == coord_test:
+        print('found at index {}'.format(test_count), x)
 
 coords_list = [
 
@@ -21,7 +29,7 @@ coords_list = [
 ]
 
 for coords in coords_list:
-    test(coords)
+    test2(coords)
 
 
 
